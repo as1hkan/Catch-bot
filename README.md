@@ -1,19 +1,19 @@
 # Telegram Auto-Chat & Catch Bot
 
-این پروژه یک ربات هوشمند مبتنی بر کتابخانه **Telethon** است که برای مدیریت خودکار فعالیت‌ها در گروه‌های تلگرامی (به‌ویژه گروه‌های بازی Waifu) طراحی شده است. این ربات توانایی چت خودکار با چندین اکانت، فوروارد کردن پیام‌های خاص و شکار (Catch) خودکار کاراکترها را دارد.
+A high-performance, multi-account Telegram automation tool built with **Python** and **Telethon**. This bot is designed to handle automated conversations, forward specific game events, and execute "catch" commands for Waifu-style bots with human-like delays.
 
-## 🚀 قابلیت‌های اصلی
+## ✨ Key Features
 
-* **Multi-Session Support:** قابلیت لاگین و مدیریت همزمان چندین اکانت تلگرام.
-* **Auto Catch:** شناسایی خودکار اسپاون شدن کاراکترها و ارسال دستور `/catch` با تاخیر انسانی.
-* **Auto Forward:** فوروارد کردن پیام‌های اسپاون به کانال‌ها یا چت‌های دیگر.
-* **Natural Chat Loop:** شبیه‌سازی گفتگوهای انسانی در موضوعات مختلف (گیم، غذا، فیلم و روزمره) برای جلوگیری از بن شدن.
-* **Flood Handling:** مدیریت خودکار محدودیت‌های تلگرام (`FloodWaitError`) و ایجاد تاخیرهای تصادفی.
-* **Colorized Logs:** نمایش وضعیت لاگ‌ها به صورت رنگی و تفکیک شده در کنسول.
+- **Multi-Session Management:** Run and sync multiple Telegram accounts simultaneously.
+- **Auto-Catch Logic:** Automatically detects character spawns and sends `/catch` commands.
+- **Intelligent Forwarding:** Forwards specific spawn messages to designated channels/users.
+- **Human-Like Chatting:** Includes a "Natural Chat Loop" with randomized scenarios (Gaming, Food, Movies, Daily Life) to maintain account health and avoid spam flags.
+- **Smart Throttling:** Built-in handling for `FloodWaitError` and randomized delays ($6.5s - 9.0s$) to mimic human behavior.
+- **UTF-8 Console Support:** Full support for Persian/Emoji rendering in the terminal.
 
-## 🛠 پیش‌نیازها
+## 🛠 Prerequisites
 
-قبل از اجرا، مطمئن شوید که پایتون نصب است، سپس کتابخانه‌های مورد نیاز را نصب کنید:
+Ensure you have Python 3.8+ installed. You will also need to install the following dependencies:
 
 ```bash
 pip install telethon colorama
